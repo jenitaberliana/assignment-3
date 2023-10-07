@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "num": "001",
+      "name": "Bulbasaur",
+      "img": "https://www.serebii.net/pokemon/art/001.png",
+      "type": "Grass"
+    },
+    {
+      "id": 2,
+      "num": "002",
+      "name": "Ivysaur",
+      "img": "https://www.serebii.net/pokemon/art/002.png",
+      "type": "Grass"
+    },
+    {
+      "id": 3,
+      "num": "003",
+      "name": "Venusaur",
+      "img": "https://www.serebii.net/pokemon/art/003.png",
+      "type": "Grass"
+    },
+    {
+      "id": 4,
+      "num": "004",
+      "name": "Charmander",
+      "img": "https://www.serebii.net/pokemon/art/004.png",
+      "type": "Fire"
+    },
+    {
+      "id": 5,
+      "num": "005",
+      "name": "Charmeleon",
+      "img": "https://www.serebii.net/pokemon/art/005.png",
+      "type": "Fire"
+    },
+    {
+      "id": 6,
+      "num": "006",
+      "name": "Charizard",
+      "img": "https://www.serebii.net/pokemon/art/006.png",
+      "type": "Fire"
+    },
+    {
+      "num": "007",
+      "name": "Squirtle",
+      "img": "https://www.serebii.net/pokemon/art/007.png",
+      "type": "Water Coy",
+      "id": 7
+    }
+  ]
+}
