@@ -1,4 +1,5 @@
 const categories = document.getElementById("categories");
+const categoriesEdit = document.getElementById("categories-edit");
 const result = document.getElementById("result");
 const url = "http://localhost:3000/data";
 
@@ -18,10 +19,12 @@ categoriesList.forEach((element) => {
     newOption.setAttribute('value', element);
 
     categories.appendChild(newOption)
+    categoriesEdit.appendChild(newOption)
 });
 
 function fetchData() {
     result.innerHTML = "Loading...";
+    document.getElementById("form-edit").hidden = true;
 
     fetch(url)
         .then(response => {
@@ -96,6 +99,8 @@ function deleteData(id) {
 }
 
 function editData(id) {
+    document.getElementById("form-edit").hidden = false;
+    document.getElementById("form").hidden = true;
     fetch(`${url}/${id}`)
         .then(response => {
             if (!response.ok) {
@@ -105,15 +110,15 @@ function editData(id) {
         })
         .then(data => {
             if (data) {
-                document.getElementById("name").value = data.name;
-                document.getElementById("img").value = data.img; 
-                document.getElementById("categories").value = data.categories;
+                document.getElementById("name-edit").value = data.name;
+                document.getElementById("img-edit").value = data.img; 
+                document.getElementById("categories-edit").value = data.categories;
 
-                document.getElementById("form").addEventListener("submit", function handleSubmit(event) {
+                document.getElementById("form-edit").addEventListener("submit", function handleSubmit(event) {
                     event.preventDefault();
-                    const name = document.getElementById("name").value;
-                    const img = document.getElementById("img").value;
-                    const categories = document.getElementById("categories").value;
+                    const name = document.getElementById("name-edit").value;
+                    const img = document.getElementById("img-edit").value;
+                    const categories = document.getElementById("categories-edit").value;
 
                     if (name && img && categories) {
                         const updatedData = {
@@ -130,13 +135,15 @@ function editData(id) {
                             body: JSON.stringify(updatedData),
                         })
                         .then(response => {
+                            document.getElementById("form-edit").hidden = true;
+                            document.getElementById("form").hidden = false;
                             if (response.status === 200) {
                                 result.innerHTML = "";
                                 fetchData();
 
-                                document.getElementById("name").value = "";
-                                document.getElementById("img").value = "";
-                                document.getElementById("categories").value = "";
+                                document.getElementById("name-edit").value = "";
+                                document.getElementById("img-edit").value = "";
+                                document.getElementById("categories-edit").value = "";
                             } else {
                                 console.error("Failed to update product.");
                             }

@@ -1,53 +1,34 @@
 {
   "data": [
     {
-      "id": 1,
-      "num": "001",
-      "name": "Bulbasaur",
-      "img": "https://www.serebii.net/pokemon/art/001.png",
-      "type": "Grass"
+      "name": "Tas Wanita",
+      "img": "https://i.pinimg.com/236x/36/83/b8/3683b8be3e8c69e7cc1d1ec2ed70c66d.jpg",
+      "categories": "Fashion",
+      "id": 1
     },
     {
       "id": 2,
-      "num": "002",
-      "name": "Ivysaur",
-      "img": "https://www.serebii.net/pokemon/art/002.png",
-      "type": "Grass"
+      "name": "Sepatu",
+      "img": "https://i.pinimg.com/236x/d3/89/20/d389201992435a2d89ca1dc059f90fed.jpg",
+      "categories": "Fashion"
     },
     {
       "id": 3,
-      "num": "003",
-      "name": "Venusaur",
-      "img": "https://www.serebii.net/pokemon/art/003.png",
-      "type": "Grass"
+      "name": "Laptop",
+      "img": "https://i.pinimg.com/236x/6d/ee/67/6dee67772c774bdf4cc14889b231cb14.jpg",
+      "categories": "Electronics"
     },
     {
       "id": 4,
-      "num": "004",
-      "name": "Charmander",
-      "img": "https://www.serebii.net/pokemon/art/004.png",
-      "type": "Fire"
+      "name": "Skincare",
+      "img": "https://i.pinimg.com/236x/9d/6e/37/9d6e373285d868f52e7dfac5dda48fde.jpg",
+      "categories": "Beauty"
     },
     {
-      "id": 5,
-      "num": "005",
-      "name": "Charmeleon",
-      "img": "https://www.serebii.net/pokemon/art/005.png",
-      "type": "Fire"
-    },
-    {
-      "id": 6,
-      "num": "006",
-      "name": "Charizard",
-      "img": "https://www.serebii.net/pokemon/art/006.png",
-      "type": "Fire"
-    },
-    {
-      "num": "007",
-      "name": "Squirtle",
-      "img": "https://www.serebii.net/pokemon/art/007.png",
-      "type": "Water Coy",
-      "id": 7
+      "name": "Baju",
+      "img": "https://i.pinimg.com/564x/85/e9/b1/85e9b148095ab187469607982f59a5ce.jpg",
+      "categories": "Fashion",
+      "id": 5
     }
   ]
 }
