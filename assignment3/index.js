@@ -19,6 +19,14 @@ categoriesList.forEach((element) => {
     newOption.setAttribute('value', element);
 
     categories.appendChild(newOption)
+});
+
+categoriesList.forEach((element) => {
+    const newOption = document.createElement('option');
+    const optionText = document.createTextNode(element);
+    newOption.appendChild(optionText);
+    newOption.setAttribute('value', element);
+
     categoriesEdit.appendChild(newOption)
 });
 
